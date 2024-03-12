@@ -14,10 +14,10 @@ const check = () => {
         error.textContent += 'Пароли не совпадают\n'
     }
     if (!/[A-Z]/.test(pas1)) {
-        error.textContent += 'Пароль болжен содержать верхний регистр\n'
+        error.textContent += 'Пароль должен содержать верхний регистр\n'
     }
     if (!/[a-z]/.test(pas1)) {
-        error.textContent += 'Пароль болжен содержать верхний регистр\n'
+        error.textContent += 'Пароль должен содержать верхний регистр\n'
     }
     if(!speChar.test(pas1)){
         error.textContent += 'Пароль должен содержать специальные символы'
